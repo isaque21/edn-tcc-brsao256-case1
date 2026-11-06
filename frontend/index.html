@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Em Breve | Lumi</title>
+  <meta name="description" content="Algo novo está chegando. Demonstre seu interesse e acompanhe quantas pessoas já estão na fila.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <main class="container">
+    <header class="brand">
+      <span class="logo" aria-hidden="true">◐</span>
+      <span class="brand-name">Lumi</span>
+    </header>
+
+    <section class="hero">
+      <span class="badge">Em breve</span>
+      <h1>Algo novo está chegando.</h1>
+      <p class="subtitle">
+        Estamos preparando um produto que vai mudar a forma como você organiza o seu dia.
+        Clique no botão abaixo para mostrar que tem interesse.
+      </p>
+    </section>
+
+    <section class="counter-card" aria-live="polite">
+      <p class="counter-label">pessoas já demonstraram interesse</p>
+      <p id="counter" class="counter-value">--</p>
+
+      <button id="interest-btn" class="cta" type="button" disabled>
+        <span class="cta-text">Carregando...</span>
+      </button>
+
+      <p id="status" class="status" role="status"></p>
+    </section>
+
+    <footer class="footer">
+      <p>Arquitetura serverless: API Gateway + AWS Lambda + Amazon DynamoDB</p>
+    </footer>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
